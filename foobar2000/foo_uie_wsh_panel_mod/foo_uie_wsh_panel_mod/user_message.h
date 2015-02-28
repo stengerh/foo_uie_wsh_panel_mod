@@ -10,6 +10,7 @@ enum t_user_message
 	UWM_TIMER_NEW,
 	UWM_SIZE,
 	UWM_REFRESHBK,
+	UWM_RELOAD,
 	UWM_SHOWCONFIGURE,
 	UWM_SHOWPROPERTIES,
 	UWM_REFRESHBKDONE,
@@ -63,4 +64,7 @@ enum t_user_message
 
 	// playback_queue_callback
 	CALLBACK_UWM_ON_PLAYBACK_QUEUE_CHANGED,
+
+	//library callback
+	CALLBACK_UWM_ON_LIBRARY_CHANGED,
 };

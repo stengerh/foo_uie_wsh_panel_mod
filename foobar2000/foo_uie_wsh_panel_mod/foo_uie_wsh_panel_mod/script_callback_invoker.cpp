@@ -71,6 +71,7 @@ static const IDToNameEntry g_idToNames[] =
 	DEFINE_ID_NAME_MAP_ENTRY(on_selection_changed),
 	DEFINE_ID_NAME_MAP_ENTRY(on_playback_queue_changed),
 	DEFINE_ID_NAME_MAP_ENTRY(on_script_unload),
+	DEFINE_ID_NAME_MAP_ENTRY(on_library_changed),
 };
 
 ScriptCallbackInvoker::ScriptCallbackInvoker()
