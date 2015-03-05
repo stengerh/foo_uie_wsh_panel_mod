@@ -2414,6 +2414,16 @@ STDMETHODIMP FbUtils::IsMetadbInMediaLibrary(IFbMetadbHandle * handle, VARIANT_B
 	return S_OK;
 }
 
+STDMETHODIMP FbUtils::IsLibraryEnabled(VARIANT_BOOL * p)
+{
+	TRACK_FUNCTION();
+
+	if (!p) return E_POINTER;
+
+	*p = TO_VARIANT_BOOL(static_api_ptr_t<library_manager>()->is_library_enabled());
+	return S_OK;
+}
+
 STDMETHODIMP FbUtils::get_ActivePlaylist(UINT * p)
 {
 	return FbPlaylistMangerTemplate::get_ActivePlaylist(p);
@@ -2560,6 +2570,7 @@ STDMETHODIMP FbUtils::GetLibraryItems(IFbMetadbHandleList ** outItems)
 	TRACK_FUNCTION();
 
 	if (!outItems) return E_POINTER;
+
 	metadb_handle_list items;
 	static_api_ptr_t<library_manager>()->get_all_items(items);
 	(*outItems) = new com_object_impl_t<FbMetadbHandleList>(items);

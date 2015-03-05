@@ -458,6 +458,7 @@ public:
 	STDMETHODIMP CreateContextMenuManager(IContextMenuManager ** pp);
 	STDMETHODIMP CreateMainMenuManager(IMainMenuManager ** pp);
 	STDMETHODIMP IsMetadbInMediaLibrary(IFbMetadbHandle * handle, VARIANT_BOOL * p);
+	STDMETHODIMP IsLibraryEnabled(VARIANT_BOOL * p);
 
 	STDMETHODIMP get_ActivePlaylist(UINT * p);
 	STDMETHODIMP put_ActivePlaylist(UINT idx);

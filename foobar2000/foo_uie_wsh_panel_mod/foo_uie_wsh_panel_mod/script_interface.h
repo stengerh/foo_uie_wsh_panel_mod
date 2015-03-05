@@ -425,6 +425,7 @@ __interface IFbUtils: IDispatch
 	STDMETHOD(CreateContextMenuManager)([out,retval] IContextMenuManager ** pp);
 	STDMETHOD(CreateMainMenuManager)([out,retval] IMainMenuManager ** pp);
 	STDMETHOD(IsMetadbInMediaLibrary)(IFbMetadbHandle * handle, [out,retval] VARIANT_BOOL * p);
+	STDMETHOD(IsLibraryEnabled)([out,retval] VARIANT_BOOL * p);
 	//
 	[propget] STDMETHOD(ActivePlaylist)([out,retval] UINT * p);
 	[propput] STDMETHOD(ActivePlaylist)(UINT idx);
