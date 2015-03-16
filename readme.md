@@ -1,6 +1,14 @@
 ##Overview
 
-I've made a few minor modifications of the original component. Downloads can be found on the [Releases](https://github.com/marc2k3/foo_uie_wsh_panel_mod/releases) page.
+I've made a few minor modifications of the original component. Details can be found in the changelog below.
+
+##Downloads
+
+The latest component file can be downloaded on the [Releases](https://github.com/marc2k3/foo_uie_wsh_panel_mod/releases) page.
+
+##Compiling
+
+All required files are included using relative paths so it should compile as-is. I used Visual Studio Community Edition 2013 Update 4 which is completely free.
 
 ##Changelog
 ```
