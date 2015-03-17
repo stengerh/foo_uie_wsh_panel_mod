@@ -8,7 +8,7 @@ The latest component file can be downloaded on the [Releases](https://github.com
 
 ##Compiling
 
-All required files are included using relative paths so it should compile as-is. I used Visual Studio Community Edition 2013 Update 4 which is completely free.
+All required files are included using relative paths so it should compile as-is. I used Visual Studio 2013 Community Edition Update 4 which is completely free.
 
 ##Changelog
 ```
