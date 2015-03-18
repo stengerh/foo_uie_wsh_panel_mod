@@ -4,11 +4,7 @@ I've made a few minor modifications of the original component. Details can be fo
 
 ##Downloads
 
-The latest component file can be downloaded on the [Releases](https://github.com/marc2k3/foo_uie_wsh_panel_mod/releases) page.
-
-##Compiling
-
-All required files are included using relative paths so it should compile as-is. I used Visual Studio 2013 Community Edition Update 4 which is completely free.
+The latest component file can be downloaded on the [releases](https://github.com/marc2k3/foo_uie_wsh_panel_mod/releases) page.
 
 ##Changelog
 ```
@@ -39,3 +35,7 @@ v1.5.7
 - CHG: Safe mode disabled by default. If you're reading this, you're probably going to be using scripts that require this!
 - FIX: EstimateLineWrap no longer leaves stray punctuation when wrapping text at end of line.
 ```
+
+##Compiling
+
+All required files are included using relative paths so it should compile as-is. I used Visual Studio 2013 Community Edition Update 4 which is completely free.
