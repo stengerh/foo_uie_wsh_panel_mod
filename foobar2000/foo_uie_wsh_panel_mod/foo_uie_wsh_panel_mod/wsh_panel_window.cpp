@@ -571,12 +571,10 @@ LRESULT wsh_panel_window::on_message(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 	case CALLBACK_UWM_ON_LIBRARY_ITEMS_ADDED:
 		on_library_items_added();
 		return 0;
-	}
 
 	case CALLBACK_UWM_ON_LIBRARY_ITEMS_REMOVED:
 		on_library_items_removed();
 		return 0;
-	}
 
 	case CALLBACK_UWM_ON_LIBRARY_ITEMS_CHANGED:
 		on_library_items_changed();
