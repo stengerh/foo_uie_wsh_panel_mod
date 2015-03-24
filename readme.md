@@ -8,6 +8,12 @@ The latest component file can be downloaded on the [releases](https://github.com
 
 ##Changelog
 ```
+v1.5.9
+- CHG: on_library_changed() has been deprecated after a very short life.
+- ADD: on_library_items_added()
+- ADD: on_library_items_removed()
+- ADD: on_library_items_changed()
+
 v1.5.8
 - ADD: fb.IsLibraryEnabled()
 

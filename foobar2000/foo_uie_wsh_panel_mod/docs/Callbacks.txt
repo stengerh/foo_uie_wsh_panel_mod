@@ -218,5 +218,6 @@ function on_drag_drop(action, x, y, mask) {}
 // Please check your "tooltip" preprocessor directive before use.
 function on_tooltip_custom_paint(gr) {}
 
-//called when items are added, removed or modified
-function on_library_changed() {}
+function on_library_items_added() {}
+function on_library_items_removed() {}
+function on_library_items_changed() {}
