@@ -288,29 +288,22 @@ void my_playlist_callback::on_playlist_renamed(t_size p_index,const char * p_new
 	on_playlists_changed();
 }
 
-
 void my_playback_queue_callback::on_changed(t_change_origin p_origin)
 {
 	panel_manager::instance().post_msg_to_all(CALLBACK_UWM_ON_PLAYBACK_QUEUE_CHANGED, (WPARAM)p_origin);
 }
 
-
-void my_library_callback::on_library_changed()
-{
-	panel_manager::instance().post_msg_to_all(CALLBACK_UWM_ON_LIBRARY_CHANGED);
-}
-
 void my_library_callback::on_items_added(const pfc::list_base_const_t<metadb_handle_ptr> & p_data)
 {
-	on_library_changed();
+	panel_manager::instance().post_msg_to_all(CALLBACK_UWM_ON_LIBRARY_ITEMS_ADDED);
 }
 
 void my_library_callback::on_items_removed(const pfc::list_base_const_t<metadb_handle_ptr> & p_data)
 {
-	on_library_changed();
+	panel_manager::instance().post_msg_to_all(CALLBACK_UWM_ON_LIBRARY_ITEMS_REMOVED);
 }
 
 void my_library_callback::on_items_modified(const pfc::list_base_const_t<metadb_handle_ptr> & p_data)
 {
-	on_library_changed();
+	panel_manager::instance().post_msg_to_all(CALLBACK_UWM_ON_LIBRARY_ITEMS_CHANGED);
 }

@@ -226,7 +226,4 @@ public:
 	virtual void on_items_added(const pfc::list_base_const_t<metadb_handle_ptr> & p_data);
 	virtual void on_items_removed(const pfc::list_base_const_t<metadb_handle_ptr> & p_data);
 	virtual void on_items_modified(const pfc::list_base_const_t<metadb_handle_ptr> & p_data);
-
-private:
-	void on_library_changed();
 };
