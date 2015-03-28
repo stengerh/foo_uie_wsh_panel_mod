@@ -187,10 +187,7 @@ Properties:
     
 Methods:
     IFbFileInfo GetFileInfo();
-    // [Obsolete] do not use, use UpdateFileInfoSimple instead.
-    void UpdateFileInfo(IFbFileInfo);
-    // It's recommended to use this method if you want to update tags
-    // if value is a empty string, field will be removed
+    // If value is a empty string, field will be removed
     // [Optional] multivalue_fields is a semicolon-separated list contains fields name which need to be treated as multivalue.
     // Usage: meta.UpdateFileInfoSimple("ARTIST", "Enigma", "GENRE", "Downtempo;Ambient", "GENRE");
     // GENRE will be treated as a multivalue field. So GENRE[0] = "Downtempo", GENRE[1] = "Ambient
@@ -462,9 +459,9 @@ Methods:
 
 interface IThemeManager {
 Methods:
-    // For parts and stats: http://msdn.microsoft.com/en-us/library/bb773210%28VS.85%29.aspx
+    // For parts and states: http://msdn.microsoft.com/en-us/library/bb773210%28VS.85%29.aspx
     // You get vsstyle.h and vssym32.h (won't included in Flags because they are too large) here:
-    //    http://dl.dropbox.com/u/2451120/vsstyles_h.7z
+    // http://dl.dropbox.com/u/2451120/vsstyles_h.7z
     void SetPartAndStateID(partid, stateid);
     // NOTE: stateid should be 0, it's unused now.
     boolean IsThemePartDefined(partid, stateid = 0);
@@ -559,7 +556,7 @@ Methods:
 interface IWSHUtils {
 Methods:
     // While is_dll is true, check component file name, for example: utils.CheckComponent("foo_uie_wsh_panel_mod", true);
-    //   otherwise, check the name of the component only.
+    // otherwise, check the name of the component only.
     boolean CheckComponent(name, is_dll = false);
     // name: can be either in english or the localized name in your os.
     boolean CheckFont(name);
@@ -583,7 +580,7 @@ Methods:
     // Using Microsoft MS-DOS wildcards match type. ex ("*.txt", "abc?.tx?")
     boolean PathWildcardMatch(pattern, str);
     // Returns null if file cannot be read or doesn't exist.
-    // If codepabe == 0, text file can be either: UTF-16 with BOM, UTF-8 with BOM and ANSI.
+    // If codepage == 0, text file can be either: UTF-16 with BOM, UTF-8 with BOM and ANSI.
     // You can consider using helper routines for codepage in Codepages.txt.
     String ReadTextFile(filename, codepage = 0);
     // index: http://msdn.microsoft.com/en-us/library/ms724371%28VS.85%29.aspx
