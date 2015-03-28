@@ -6,11 +6,11 @@
 // ==/PREPROCESSOR==
 
 function RGB(r, g, b) {
-    return (0xff000000 | (r << 16) | (g << 8) | (b));
+	return (0xff000000 | (r << 16) | (g << 8) | (b));
 }
 
 function RGBA(r, g, b, a) {
-    return ((a << 24) | (r << 16) | (g << 8) | (b));
+	return ((a << 24) | (r << 16) | (g << 8) | (b));
 }
 
 var g_font = gdi.Font("Segoe UI", 22, 1);
@@ -19,21 +19,21 @@ var g_textrender = gdi.CreateStyleTextRender();
 var g_bkclr = RGB(0, 0, 0);
 
 function on_paint(gr) {
-    gr.SetTextRenderingHint(5);
-    gr.SetSmoothingMode(4);
-    gr.SetInterpolationMode(7);
+	gr.SetTextRenderingHint(5);
+	gr.SetSmoothingMode(4);
+	gr.SetInterpolationMode(7);
 
-    var ww = window.Width;
-    var wh = window.Height;
+	var ww = window.Width;
+	var wh = window.Height;
 
-    // Draw background first
-    gr.FillSolidRect(0, 0, ww, wh, g_bkclr);
+	// Draw background first
+	gr.FillSolidRect(0, 0, ww, wh, g_bkclr);
 
-    g_textrender.GlowText(RGB(0, 0, 64), RGBA(255, 255, 0, 30), 12);
+	g_textrender.GlowText(RGB(0, 0, 64), RGBA(255, 255, 0, 30), 12);
 
-    // Clear previous shadow setting
-    g_textrender.EnableShadow(true);
-    g_textrender.ResetShadow();
+	// Clear previous shadow setting
+	g_textrender.EnableShadow(true);
+	g_textrender.ResetShadow();
 
-    g_textrender.RenderStringRect(gr, "Glow Text Sample", g_font, 0, 0, ww, wh, 0x11005000);
+	g_textrender.RenderStringRect(gr, "Glow Text Sample", g_font, 0, 0, ww, wh, 0x11005000);
 }

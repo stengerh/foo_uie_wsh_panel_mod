@@ -10,8 +10,8 @@
 
 // Callback
 function on_metadb_changed(handles, fromhook) {
-    fb.trace('on_metadb_changed');
-    var count = handles.Count;
-    // Prompt how many files has been changed
-    fb.ShowPopupMessage("" + count + ((count > 1) ? " files have" : " file has") + " been changed.");
+	fb.trace('on_metadb_changed');
+	var count = handles.Count;
+	// Prompt how many files has been changed
+	fb.ShowPopupMessage("" + count + ((count > 1) ? " files have" : " file has") + " been changed.");
 }
