@@ -8,6 +8,13 @@ The latest component file can be downloaded on the [releases](https://github.com
 
 ##Changelog
 ```
+v1.5.10
+- ADD: plman.UndoBackup(playlistIndex). If you call this before adding/removing/reordering playlist items, you will 
+       be able to use the undo/redo commands on the Edit menu.
+- CHG: Tidy up samples and add missing images. Paths to required files are now relative providing you install the
+       component in the proper way.
+       http://wiki.hydrogenaud.io/index.php?title=Foobar2000:How_to_install_a_component
+
 v1.5.9
 - CHG: on_library_changed() has been deprecated after a very short life.
 - ADD: on_library_items_added()

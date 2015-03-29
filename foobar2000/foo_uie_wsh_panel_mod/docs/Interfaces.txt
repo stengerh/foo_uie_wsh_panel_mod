@@ -631,6 +631,9 @@ Properties:
 
 interface IFbPlaylistManager {
 Methods:
+    // Call before using other plman methods that add/remove/reorder playlist items so a history will be
+    // usable from the Edit menu.
+    void UndoBackup(playlistIndex);
     // Inserts new items into specified playlist, at specified position.
     uint InsertPlaylistItems(playlistIndex, base, handles, select = false);
     uint InsertPlaylistItemsFilter(playlistIndex, base, handles, select = false);

@@ -156,6 +156,7 @@ plman.IsPlaybackQueueActive()
 plman.IsPlaylistItemSelected(playlistIndex, itemIndex)
 plman.SortByFormat(playlistIndex, pattern[, selOnly])
 plman.SortByFormatV2(playlistIndex, pattern[, direction])
+plman.UndoBackup(idx);
 
 # Callback function prototypes
 on_mouse_lbtn_down(x, y, mask)
