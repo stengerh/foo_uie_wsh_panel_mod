@@ -1,3 +1,14 @@
+##Overview
+
+I've made a few minor modifications of the original component. Details can be found
+in the changelog below.
+
+##Downloads
+
+The latest component file can be downloaded on the [releases](https://github.com/marc2k3/foo_uie_wsh_panel_mod/releases) page.
+
+##Changelog
+```
 v1.5.10
 - ADD: plman.UndoBackup(playlistIndex). If you call this before
        adding/removing/reordering playlist items, you will be able to use
@@ -34,7 +45,7 @@ v1.5.7
 - CHG: Remove functions marked as obsolete 2+ years ago. There are newer
        alternatives for all of them:
 
-       window.WatchMetadb 
+       window.WatchMetadb
        window.UnWatchMetadb
        window.CreateTimerTimeout
        window.CreateTimerInterval
@@ -48,3 +59,9 @@ v1.5.7
        probably going to be using scripts that require this!
 - FIX: EstimateLineWrap no longer leaves stray punctuation when wrapping
        text at end of line.
+
+```
+
+##Compiling
+
+All required files are included using relative paths so it should compile as-is. I used Visual Studio 2013 Community Edition Update 4 which is completely free.
