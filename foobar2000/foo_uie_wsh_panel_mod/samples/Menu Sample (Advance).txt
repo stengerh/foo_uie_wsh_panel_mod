@@ -1,8 +1,6 @@
-// vi:set ft=javascript ff=dos ts=4 sts=4 sw=4 et:
-
-// ==PREPROCESSOR==
+﻿// ==PREPROCESSOR==
 // @name "Menu Sample (Advance)"
-// @author "T.P Wang"
+// @author "T.P Wang / marc2003"
 // ==/PREPROCESSOR==
 
 // Flags, used by Menu
@@ -22,7 +20,7 @@ function on_mouse_lbtn_down(x, y) {
 	var _context = fb.CreateContextMenuManager();
 	var _basemenu = window.CreatePopupMenu();
 	var _child = window.CreatePopupMenu();
-	var ret;
+	var idx;
 
 	// Please start index at 1, NOT 0
 	_basemenu.AppendMenuItem(MF_STRING, 1, "item1");
@@ -32,25 +30,22 @@ function on_mouse_lbtn_down(x, y) {
 	_context.InitNowPlaying();
 	_context.BuildMenu(_child, 3, -1);
 
-	ret = _basemenu.TrackPopupMenu(x, y);
+	idx = _basemenu.TrackPopupMenu(x, y);
 
-	// Here is why start index should be 0
-	if (ret == 0) return;
-
-	// Execute!
-	switch (ret) {
-	case 1:
-		fb.ShowPopupMessage("Mmmm, you have choose item1, of course");
-		break; // break is important, or it will exucte the following...
-	case 2:
-		fb.ShowPopupMessage("Ok, item2 is clicked");
-		break;
-
-	default:
-		_context.ExecuteByID(ret - 3);
-		fb.trace(ret.toString());
-		break;
+	switch (idx) {
+		case 0: //user dismissed menu by clicking elsewhere. that's why you can't use 0 when building menu items
+			break;
+		case 1:
+			fb.ShowPopupMessage("Mmmm, you have choose item1, of course");
+			break;
+		case 2:
+			fb.ShowPopupMessage("Ok, item2 is clicked");
+			break;
+		default:
+			_context.ExecuteByID(idx - 3);
+			break;
 	}
-
 	_basemenu.Dispose();
+	_child.Dispose();
+	_context.Dispose();
 }

@@ -1,7 +1,3 @@
-// vi:set ft=javascript ff=dos ts=4 sts=4 sw=4 et:
-
-// Demonstrate how to use import preprocessor directive
-
 // ==PREPROCESSOR==
 // @name "Preprocessor"
 // @author "T.P Wang"

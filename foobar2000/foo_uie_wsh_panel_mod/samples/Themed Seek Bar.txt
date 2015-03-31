@@ -1,5 +1,3 @@
-// vi:set ft=javascript ff=dos ts=4 sts=4 sw=4 et:
-
 // ==PREPROCESSOR==
 // @name "Themed Seek Bar"
 // @author "T.P Wang"

@@ -1,5 +1,3 @@
-// vi:set ft=javascript ff=dos ts=4 sts=4 sw=4 et:
-
 // ==PREPROCESSOR==
 // @name "Watch Metadb Change (Base)"
 // @author "T.P Wang"
@@ -10,8 +8,7 @@
 
 // Callback
 function on_metadb_changed(handles, fromhook) {
-	fb.trace('on_metadb_changed');
 	var count = handles.Count;
-	// Prompt how many files has been changed
-	fb.ShowPopupMessage("" + count + ((count > 1) ? " files have" : " file has") + " been changed.");
+	// show how many files has been changed
+	fb.ShowPopupMessage("" + count + (count > 1 ? " files have" : " file has") + " been changed.");
 }

@@ -1,12 +1,9 @@
-// vi:set ft=javascript ff=dos ts=4 sts=4 sw=4 et:
-
-// ==PREPROCESSOR==
+﻿// ==PREPROCESSOR==
 // @name "LoadImageAsync"
 // @author "T.P Wang"
 // ==/PREPROCESSOR==
 
-// Get a list of images from a folder contains pictures
-// ***NOTE***
+// Get a list of jpg files from a folder
 // You can configure the path before use.
 var g_image_list = utils.Glob("c:\\windows\\web\\wallpaper\\*.jpg").toArray();
 
