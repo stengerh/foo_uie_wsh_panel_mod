@@ -5,7 +5,7 @@ in the changelog below.
 
 ##Before upgrading from v1.5.6...
 
-You should check that none of the functions used by your scripts are marked as obsolete by the official component. Even if you don't write your own scripts, the component will report use of obsolete functions to the foobar2000 **Console**. This is found on the **View** menu and should be checked just after foobar2000 starts as these messages are only reported once. Details on the exact functions affected are detailed in the changelog below.
+You should check that none of the functions used by your scripts are marked as obsolete by the official component. Even if you don't write your own scripts, the component will report use of obsolete functions to the foobar2000 **Console**. This is found on the **View** menu and should be checked just after foobar2000 starts as these messages are only reported once.
 
 In v1.5.7 and newer, these functions have been removed and will cause those older scripts to crash. Either update/remove the scripts or continue using the older component.
 
