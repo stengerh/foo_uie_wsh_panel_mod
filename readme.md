@@ -7,7 +7,7 @@ in the changelog below.
 
 You should check that none of the functions used by your scripts are marked as obsolete by the official component. Even if you don't write your own scripts, the component will report use of obsolete functions to the foobar2000 **Console**. This is found on the **View** menu and should be checked just after foobar2000 starts as these messages are only reported once.
 
-In v1.5.7 and newer, these functions have been removed and will cause those older scripts to crash. Either update/remove the scripts or continue using the older component.
+In v1.5.7 and newer, these functions have been removed and will cause those older scripts to crash. Either update/remove the scripts or continue using the older component. More details can be found in the [Wiki](https://github.com/marc2k3/foo_uie_wsh_panel_mod/wiki).
 
 ##Downloads
 
